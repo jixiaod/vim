@@ -42,6 +42,9 @@ Plugin 'jixiaod/vim-code-sniffer'
 Plugin 'spolu/dwm.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Chiel92/vim-autoformat'
 
 " theme plugin
 Plugin 'tomasr/molokai'
@@ -68,4 +71,9 @@ let g:SnifferToolkit_author_string      = "Gang Ji <gang.ji@moji.com>"
 let g:SnifferToolkit_copyright_string   = "2014-2016 Moji Fengyun Software Technology Development Co., Ltd."
 let g:SnifferToolkit_license_string     = "license from Moji Fengyun Software Technology Development Co., Ltd."
 let g:SnifferToolkit_link_string        = "http://www.moji.com"
+"}
+"vim-autoformat {
+let g:formatdef_tiger = '"astyle --style=1tbs --indent=spaces=4 --break-blocks=all --pad-header --delete-empty-lines --add-brackets"'
+let g:formatters_php = ['tiger']
+noremap <F3> :Autoformat<CR>
 "}
